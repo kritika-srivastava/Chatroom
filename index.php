@@ -2,7 +2,7 @@
 include 'src/header.php';
 ?>
 <center>
-    <form action="claim.php" method="post">
+    <form action="src/claim.php" method="post">
         <b class="p2" >chatroom.com/ &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="room"> <b>
 
         &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-primary" style="background-color:#8ED1FC; color:#000000">Claim Room</a>
