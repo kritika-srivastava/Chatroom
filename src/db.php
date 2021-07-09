@@ -6,10 +6,8 @@ $database ="Chatroom";
 
 // Creating Database Connection
 
-$connect = mysqli_connect($servername,$username,$password,$database);
+$connect = mysqli_connect($servername, $username, $password, $database);
 
-if(!$connect)
-{
+if (!$connect) {
     die("Failed to Connect".mysqli_connect_error());
 }
-?>

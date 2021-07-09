@@ -3,9 +3,10 @@ include 'src/header.php';
 ?>
 <center>
     <form action="src/claim.php" method="post">
-        <b class="p2" >chatroom.com/ &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="room"> <b>
+        chatroom.com/ &nbsp;&nbsp;&nbsp;&nbsp; <b><input type="text" name="room" placeholder="Room name">
 
-        &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-primary" style="background-color:#8ED1FC; color:#000000">Claim Room</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-primary"
+                style="background-color:#8ED1FC; color:#23395d">Claim Room</a></b>
     </form>
 </center>
 <?php

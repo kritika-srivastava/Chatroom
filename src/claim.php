@@ -49,7 +49,7 @@ if($result)
     echo '<script language = "javascript">';
     // Error message if room is claimed
     echo 'alert("'.$message.'");';
-    echo 'window.location="http://localhost/Chatroom/rooms.php?roomname=' . $room. '";'; 
+    echo 'window.location="http://localhost/Chatroom/src/rooms.php?roomname=' . $room. '";'; 
     echo '</script>';
         }
     }
@@ -57,6 +57,5 @@ if($result)
 else{
     echo "Error :". mysqli_error($connect);
 }
-
-echo "Lets Chat Now";
+echo "Success";
 ?>
