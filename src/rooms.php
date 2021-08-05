@@ -16,7 +16,7 @@ if ($result) {
         echo '<script language = "javascript">';
         // Change the url while deployment
         echo 'alert("'.$message.'");';
-        echo 'window.location="'.$link.'";';
+        echo 'window.location="'.$link.'/src/";';
         echo '</script>';
     }
 } else {
