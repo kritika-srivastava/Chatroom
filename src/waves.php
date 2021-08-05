@@ -1,3 +1,10 @@
+<!--
+ * /opt/lampp/htdocs/Chatroom/src/claim.php
+ * @author Kritika Srivastava
+ * @since August 05, 2021
+
+//_____________________________________________________________________________________________________________
+-->
 <svg id="svg" viewBox="0 85 1440 350" width="100%" height="100%" preserveAspectRatio="xMidYMid meet"
     xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
     <path

@@ -1,8 +1,14 @@
 <?php
 
+/**
+ * /opt/lampp/htdocs/Chatroom/src/claim.php
+ * @author Kritika Srivastava
+ * @since August 05, 2021
+ */
+//_____________________________________________________________________________________________________________
+
 // Getting the value of post parameters
 $room=$_POST['room'];
-
 
 // TESTING-------------------------------------------------------------------------------------------------------------------------
 //$link ="http://localhost/Chatroom";

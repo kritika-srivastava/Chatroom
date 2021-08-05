@@ -1,4 +1,13 @@
 <?php
+/**
+ * /opt/lampp/htdocs/Chatroom/src/claim.php
+ * @author Kritika Srivastava
+ * @since August 05, 2021
+ */
+//_____________________________________________________________________________________________________________
+
+
+
 include 'src/header.php';
 ?>
 <center>

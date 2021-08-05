@@ -1,3 +1,10 @@
+<!--
+ * /opt/lampp/htdocs/Chatroom/src/claim.php
+ * @author Kritika Srivastava
+ * @since August 05, 2021
+
+//_____________________________________________________________________________________________________________
+-->
 <nav class="navbar navbar-light" style="background-color:#8ED1FC">
     <a href="#" style="color:red"><b>
             <div class="p3">Chatroom</div>
