@@ -3,7 +3,7 @@ include 'db.php';
 $room = $_POST['room'];
 $ip = $_POST['ip'];
 
-$sql= "SELECT msg, stime,ip FROM messages WHERE room = '$room'";
+$sql= "SELECT msg, stime,ip FROM messages WHERE room = '$room' ORDER BY stime DESC";
 
 $res = "";
 $result = mysqli_query($connect, $sql);
@@ -29,6 +29,4 @@ if (mysqli_num_rows($result)>0) {
         }
     }
 }
-
-
 echo $res;

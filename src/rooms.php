@@ -110,7 +110,9 @@ if ($result) {
         background-image: url("../img/bg_img.svg");
         background-size: auto;
         height: 550px;
-        overflow-y: scroll;
+        overflow: auto;
+        display: flex;
+        flex-direction: column-reverse;
 
     }
 
@@ -137,7 +139,7 @@ if ($result) {
     </div>
     <br>
     <br>
-   
+
     <center>
         <input type="text" class="form-control" name="usermsg" id="usermsg" style="width:50%;"
             placeholder="Add message"><br>
@@ -183,7 +185,7 @@ if ($result) {
         )
     }
 
-   
+
     // If form is submitted Using Enterkey
     var input = document.getElementById("usermsg");
     input.addEventListener("keyup", function(event) {
