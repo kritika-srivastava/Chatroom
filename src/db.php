@@ -1,8 +1,18 @@
 <?php
-$servername ="localhost";
-$username ="root";
-$password="";
-$database ="Chatroom";
+
+// Remote Database Connection: Actual Deployment-------------------------------
+$servername ="remotemysql.com";
+$username ="LRx9JbF8qS";
+$password="FW60L5lR1T";
+$database ="LRx9JbF8qS";
+
+
+// Development COnnection For testing on local machine-------------------------
+// $servername ="localhost";
+// $username ="root";
+// $password="";
+// $database ="Chatroom";
+
 
 // Creating Database Connection
 
