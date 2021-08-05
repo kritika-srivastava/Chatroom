@@ -28,7 +28,7 @@
         z-index: -1;
         background-image: url(../img/bg.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
 
     .p3 {
