@@ -16,7 +16,7 @@ if ($result) {
         echo '<script language = "javascript">';
         // Change the url while deployment
         echo 'alert("'.$message.'");';
-        echo 'window.location="http://localhost/Chatroom/src";';
+        echo 'window.location="'.$link.'/Chatroom";';
         echo '</script>';
     }
 } else {
@@ -39,7 +39,7 @@ if ($result) {
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,6 +47,7 @@ if ($result) {
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 
     <style>
     body {
@@ -63,6 +64,7 @@ if ($result) {
         font-family: 'Sacramento', cursive;
         font-size: 50px
     }
+
     .p1 {
         font-family: 'Expletus Sans', cursive;
     }
@@ -75,65 +77,46 @@ if ($result) {
         height: 8%;
         bottom: 0;
         left: 0;
-
         background-color: #8ED1FC;
 
     }
 
-    .svgim {
-        position: relative;
-        bottom: 0;
-        left: 0;
-        background-size: cover;
-
-    }
-
     .container {
-        border: 2px solid #C59CDB;
-        background-color: #DFD0F1;
-        border-radius: 5px;
+        border: 2px solid #BCE6EB;
+        background-color: #BCE6EB;
+        border-radius: 20px;
         padding: 5px;
         margin: 10px auto;
-        margin-right
-        
-        
+        position: relative;
+        font-family: 'Inter', sans-serif;
 
     }
 
     .darker {
-        border-color: #55D9C0;
-        background-color: #C7F6EC;
+        border: 2px solid #F25287;
+        background-color: #F25287;
+        color: white;
     }
 
     .container::after {
+
         content: "";
         clear: both;
         display: table;
-       
+
     }
 
-    .container img {
-        float: left;
-        max-width: 60px;
-        width: 100%;
-        margin-right: 20px;
-        border-radius: 50%;
-    }
+    .scroll {
+        background-image: url("../img/bg_img.svg");
+        background-size: auto;
+        height: 550px;
+        overflow-y: scroll;
 
-    .container img.right {
-        float: right;
-        margin-left: 20px;
-        margin-right: 0;
     }
 
     .time-right {
         float: right;
-        color: #aaa;
-    }
-
-    .time-left {
-        float: left;
-        color: #999;
+        color: #000000;
     }
     </style>
 </head>
@@ -146,30 +129,22 @@ if ($result) {
 ?>
     <br>
     <br>
+    <div class="scroll">
+        <div class="container">
 
-    <div class="container">
-        <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-        <p>Hello. How are you today?</p>
-        <span class="time-right">11:00</span>
-    </div>
 
-    <div class="container darker">
-        <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
-        <p>Hey! I'm fine. Thanks for asking!</p>
-        <span class="time-left">11:01</span>
+        </div>
     </div>
+    <br>
+    <br>
 
-    <div class="container">
-        <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-        <p>So, what do you wanna do today?</p>
-        <span class="time-right">11:02</span>
-    </div>
+    <center>
+        <input type="text" class="form-control" name="usermsg" id="usermsg" style="width:50%;"
+            placeholder="Add message"><br>
+        <button class="btn btn-default" name="submitmsg" id="submitmsg"
+            style="background-color:#8ED1FC; color:#23395d; border-color:#0000FF; border-width:1px">Send</button>
+    </center>
 
-    <div class="container darker">
-        <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
-        <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-        <span class="time-left">11:05</span>
-    </div>
     <div class="svgim">
         <div class="footer">
             <div class="p1" fill="#000000" font-size="15" style="background-color:#8ED1FC">
@@ -188,6 +163,49 @@ if ($result) {
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+    // Check for new messages every 0.5 millisecond
+    setInterval(runFunction, 500);
+
+    function runFunction() {
+        $.post("htconnect.php", {
+                room: '<?php echo $roomname ?>',
+                ip: '<?php echo $_SERVER['REMOTE_ADDR'] ?>'
+            },
+            function(data, status) {
+                document.getElementsByClassName('scroll')[0].innerHTML = data;
+            }
+        )
+    }
+
+   
+    // If form is submitted Using Enterkey
+    var input = document.getElementById("usermsg");
+    input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("submitmsg").click();
+        }
+    });
+
+
+    $("#submitmsg").click(function() {
+        var clientmsg = $("#usermsg").val();
+        $.post("postmessage.php", {
+            text: clientmsg,
+            room: '<?php echo $roomname ?>',
+            ip: '<?php echo $_SERVER['REMOTE_ADDR'] ?>'
+        }, function(data, status) {
+            document.getElementsByClassName('scroll')[0].innerHTML = data;
+        });
+        $("#usermsg").val("");
+        return false;
+    });
     </script>
 </body>
 
