@@ -25,7 +25,7 @@
         height: 100%;
         bottom: 0px; 
         right: 0px;
-        
+        position: fixed;
         background-image: url(../img/bg.png);
         background-position: right;
         background-repeat: no-repeat;
