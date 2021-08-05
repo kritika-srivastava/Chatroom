@@ -25,7 +25,7 @@ if (mysqli_num_rows($result)>0) {
             $res = $res.'<div class="message last">';
             $res = $res.$row['ip'];
             $res = $res." says <p>".$row['msg'];
-            $res = $res.'</p> <span class="time-right">' . $row['stime']."</span></div>";
+            $res = $res.'</p> <span class="time-right">' . $row['stime']."</span></div></div>";
         }
     }
 }
