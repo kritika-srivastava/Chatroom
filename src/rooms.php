@@ -137,7 +137,7 @@ if ($result) {
     </div>
     <br>
     <br>
-
+   
     <center>
         <input type="text" class="form-control" name="usermsg" id="usermsg" style="width:50%;"
             placeholder="Add message"><br>

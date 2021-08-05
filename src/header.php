@@ -26,6 +26,8 @@
         left: 0px;
         top: 0px;
         z-index: -1;
+        background-image: url(../img/bg.png);
+        background-size: stretch;
     }
 
     .p3 {
