@@ -23,10 +23,11 @@
     body {
         width: 100%;
         height: 100%;
-        left: 0px;
-        top: 0px;
-        z-index: -1;
+        bottom: 0px; 
+        right: 0px;
+        
         background-image: url(../img/bg.png);
+        background-position: right;
         background-repeat: no-repeat;
         background-size: contain;
     }
