@@ -1,5 +1,28 @@
-<<<<<<< HEAD
+
 # Realtime Chatroom
-=======
-# Chatroom
->>>>>>> 99c148822160a6919aa76be3823d577b22c6bc70
+
+
+
+## Repository Structure
+
+``` bash
+.
+├── img
+│   ├── bg_img.svg
+│   └── bg.svg
+├── index.php
+├── README.md
+└── src
+    ├── claim.php
+    ├── db.php
+    ├── footer.php
+    ├── header.php
+    ├── htconnect.php
+    ├── navbar.php
+    ├── postmessage.php
+    ├── rooms.php
+    └── waves.php
+```
+
+
+# Further Design Improvements
