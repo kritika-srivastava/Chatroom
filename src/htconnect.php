@@ -19,8 +19,11 @@ $res = "";
 $result = mysqli_query($connect, $sql);
 
 //ClearDB
-$sql2= "DELETE  FROM rooms WHERE stime < NOW() - INTERVAL 1 DAY";
+$sql2= "DELETE FROM rooms WHERE stime < NOW() - INTERVAL 1 DAY";
 mysqli_query($connect, $sql2);
+
+$sql3= "DELETE FROM messages WHERE stime < NOW() - INTERVAL 1 DAY";
+mysqli_query($connect, $sql3);
 
 if (mysqli_num_rows($result)>0) {
     while ($row = mysqli_fetch_assoc($result)) {
