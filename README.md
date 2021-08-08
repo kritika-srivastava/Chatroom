@@ -28,6 +28,7 @@ The main objective of the Simple Chat Room project is to create a chat applicati
 │   └── bg.svg
 ├── index.php
 ├── README.md
+├── screen.gif
 └── src
     ├── claim.php
     ├── db.php
