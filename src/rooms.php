@@ -60,6 +60,8 @@ if ($result) {
 
     <style>
     body {
+        background-image: url("../img/bg_img.svg");
+        background-size: auto;
         width: 100%;
         height: 100%;
         left: 0px;
@@ -76,6 +78,7 @@ if ($result) {
 
     .p1 {
         font-family: 'Expletus Sans', cursive;
+        font-size: 8px
     }
 
     .footer {
@@ -97,6 +100,8 @@ if ($result) {
         padding: 5px;
         margin: 10px auto;
         position: relative;
+        word-wrap:break-word;
+        color: #003884;
         font-family: 'Inter', sans-serif;
 
     }
@@ -104,7 +109,9 @@ if ($result) {
     .darker {
         border: 2px solid #F25287;
         background-color: #F25287;
+        word-wrap:break-word;
         color: white;
+        
     }
 
     .container::after {
@@ -116,9 +123,8 @@ if ($result) {
     }
 
     .scroll {
-        background-image: url("../img/bg_img.svg");
-        background-size: auto;
-        height: 550px;
+        
+        height: 400px;
         overflow: auto;
         display: flex;
         flex-direction: column-reverse;
@@ -127,7 +133,11 @@ if ($result) {
 
     .time-right {
         float: right;
-        color: #000000;
+        color:#6554c0;
+    }
+    .time-right2 {
+        float: right;
+        color: #ffff84;
     }
     </style>
 </head>

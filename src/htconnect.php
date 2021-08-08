@@ -31,14 +31,14 @@ if (mysqli_num_rows($result)>0) {
             $res = $res.'<div class="container  darker">';
     
             $res = $res.$row['ip'];
-            $res = $res." says <p>".$row['msg'];
-            $res = $res.'</p><span class="time-right">' . $row['stime']."</span></div>";
+            $res = $res." says <br><p1>".$row['msg'];
+            $res = $res.'</p1><span class="time-right2">' . $row['stime']."</span></div>";
         } else {
             $res = $res.'<div class="container">';
             $res = $res.'<div class="message last">';
             $res = $res.$row['ip'];
-            $res = $res." says <p>".$row['msg'];
-            $res = $res.'</p> <span class="time-right">' . $row['stime']."</span></div></div>";
+            $res = $res." says <br><p1>".$row['msg'];
+            $res = $res.'</p1> <span class="time-right">' . $row['stime']."</span></div></div>";
         }
     }
 }

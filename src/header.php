@@ -38,10 +38,12 @@
     }
 
     .p2 {
+        
         font-family: 'Vollkorn', serif;
     }
 
     .p1 {
+        
         font-family: 'Expletus Sans', cursive;
     }
 
