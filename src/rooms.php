@@ -71,12 +71,17 @@ if ($result) {
         background-size: stretch;
     }
 
+    .p1 {
+        font-size: 15px;
+        font-family: 'Expletus Sans', cursive;
+    }
+
     .p3 {
         font-family: 'Sacramento', cursive;
         font-size: 50px
     }
 
-    .p1 {
+    .p4 {
         font-family: 'Expletus Sans', cursive;
         font-size: 8px
     }
@@ -100,8 +105,8 @@ if ($result) {
         padding: 5px;
         margin: 10px auto;
         position: relative;
-        word-wrap:break-word;
-        color: #003884;
+        word-wrap: break-word;
+        color: #000C66;
         font-family: 'Inter', sans-serif;
 
     }
@@ -109,9 +114,9 @@ if ($result) {
     .darker {
         border: 2px solid #F25287;
         background-color: #F25287;
-        word-wrap:break-word;
+        word-wrap: break-word;
         color: white;
-        
+
     }
 
     .container::after {
@@ -123,7 +128,7 @@ if ($result) {
     }
 
     .scroll {
-        
+
         height: 400px;
         overflow: auto;
         display: flex;
@@ -133,8 +138,9 @@ if ($result) {
 
     .time-right {
         float: right;
-        color:#6554c0;
+        color: #38555F;
     }
+
     .time-right2 {
         float: right;
         color: #ffff84;

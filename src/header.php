@@ -38,12 +38,12 @@
     }
 
     .p2 {
-        
+
         font-family: 'Vollkorn', serif;
     }
 
     .p1 {
-        
+        font-size: 15px;
         font-family: 'Expletus Sans', cursive;
     }
 
@@ -77,4 +77,3 @@
 include('navbar.php');
 include 'waves.php';
 ?>
-
