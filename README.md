@@ -3,7 +3,7 @@
 The main objective of the Simple Chat Room project is to create a chat application which helps different users to communicate with each other through a live server. This is a simple chat program with a server and database.It can have many clients.
 
 ## Live Demo
-[Website is live here!](php-chatroom.herokuapp.com/)
+[Website is live here!](https://php-chatroom.herokuapp.com/)
 
 ![](screen.gif)
 &nbsp;
