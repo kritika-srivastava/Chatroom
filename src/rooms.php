@@ -127,6 +127,48 @@ if ($result) {
 
     }
 
+    .fa-beat {
+        animation: fa-beat 5s ease infinite;
+    }
+
+    @keyframes fa-beat {
+        0% {
+            transform: scale(1);
+        }
+
+        5% {
+            transform: scale(1.25);
+        }
+
+        20% {
+            transform: scale(1);
+        }
+
+        30% {
+            transform: scale(1);
+        }
+
+        35% {
+            transform: scale(1.25);
+        }
+
+        50% {
+            transform: scale(1);
+        }
+
+        55% {
+            transform: scale(1.25);
+        }
+
+        70% {
+            transform: scale(1);
+        }
+    }
+
+    .heart {
+        color: red;
+    }
+
     .scroll {
 
         height: 400px;
@@ -175,7 +217,7 @@ if ($result) {
     <div class="svgim">
         <div class="footer">
             <div class="p1" fill="#000000" font-size="15" style="background-color:#8ED1FC">
-                <center> ©2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Made with <i class="fa fa-heart fa-2x"
+                <center> ©2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Made with <i class="fa fa-heart fa-2x fa-beat"
                         aria-hidden="true" style="color:red"></i>
                     by Kritika Srivastava</center>
             </div>

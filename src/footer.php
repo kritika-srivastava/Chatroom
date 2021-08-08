@@ -9,7 +9,7 @@
 
 <div class="footer">
     <div class="p1" fill="#000000" font-size="15" style="background-color:#8ED1FC">
-        <center> ©2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Made with <i class="fa fa-heart fa-2x"
+        <center> ©2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Made with <i class="fa fa-heart fa-2x fa-beat"
                 aria-hidden="true" style="color:red"></i>
             by Kritika Srivastava</center>
     </div>
