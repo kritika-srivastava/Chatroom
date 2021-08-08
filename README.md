@@ -5,6 +5,19 @@ The main objective of the Simple Chat Room project is to create a chat applicati
 ## Live Demo
 [Website is live here!](php-chatroom.herokuapp.com/)
 
+![](screen.gif)
+&nbsp;
+
+## Features
+- Chat anonymously
+- Create a custom chatroom with unique name
+
+## How to use?
+1. Go to the website.
+2. Type a custom roomname.
+3. Click on claim room.
+4. Share the custom generated url with your friends and you are good to go. 
+
 
 ## Repository Structure
 
@@ -27,6 +40,17 @@ The main objective of the Simple Chat Room project is to create a chat applicati
     └── waves.php
 ```
 
+## Databse Structure
+##### Table 1: rooms
+| serial_no | rooms | stime |
+|--------|----------|-------|
+|  1 | Nil | Nil  |
+
+
+##### Table 2: messages
+| sno | msg |room | ip | stime |
+|--------|----------|-------|-----|-----|
+|  1 | Nil | Nil  | Nil | Nil | 
 
 # Further Design Improvements
 - [ ] Add two factor authentication for rooms
