@@ -41,7 +41,7 @@ The main objective of the Simple Chat Room project is to create a chat applicati
     └── waves.php
 ```
 
-## Databse Structure
+## Databaase Structure
 ##### Table 1: rooms
 | serial_no | rooms | stime |
 |--------|----------|-------|
